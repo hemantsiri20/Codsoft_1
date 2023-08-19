@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Brand</div>
+
+        <span class="menubtn" onclick="openNav()">&#9776;</span>
+
+        <div class="navLinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <button type="button">Login</button>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="sideNav" id="sidenav">
+        <a href="#" class="clodeBtn" onclick="closeNav()">&#10006;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#"><button type="button">Login</button></a>
+
+    </div>
+
+    <div class="row">
+        <div class="column1">
+            <h1>SANGAM HARDWARE</h1>
+            <p>Contact us for Embrace Change, Achieve Success: Growing with Us in Business!"</p>
+            <button>PURCHASE</button>
+        </div>
+        <DIV class="COLUMN2">
+            <img src="banner.png"alt="banner"
+            width="500px">
+        </DIV>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "50%";
+        }
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0%";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
